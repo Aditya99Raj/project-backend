@@ -1,9 +1,8 @@
-const { default: mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 
 const connect = () => {
-	return mongoose.connect(
-		"mongodb+srv://aditya1:aditya1@practice.dmokj.mongodb.net/MyuserDB?retryWrites=true&w=majority"
-	);
+	  return  mongoose.connect("mongodb+srv://aditya:aditya@cluster0.748ya.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+
 };
 
 module.exports = { connect };
